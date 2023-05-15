@@ -1,5 +1,7 @@
 This Azure Function is triggered by a new blob being added to a container in the storage account. The Function will process that blob, and convert it before saving it to another container in the same storage account.
 
+![Visualization of the codebase](./diagram.svg)
+
 ## Prerequisites
 Install Azure Functions Core Tools version 3.x, and Python 3.6 or later. See [Local development guide](https://docs.microsoft.com/azure/azure-functions/functions-develop-local) for details.
 

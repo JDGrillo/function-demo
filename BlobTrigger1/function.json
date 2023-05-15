@@ -5,7 +5,7 @@
       "name": "myblob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "YOUR_SOURCE_CONTAINER/{name}",
+      "path": "YOUR_SOURCE_CONTAINER_NAME/{name}",
       "connection": "YOUR_STORAGE_CONNECTION_STRING"
     }
   ]

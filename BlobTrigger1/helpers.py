@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 from azure.storage.blob import BlobServiceClient, ResourceTypes
 from dotenv import load_dotenv
 load_dotenv()
@@ -31,7 +32,12 @@ def convert_filename(filename):
     return filename
 
 
+def read_certain_csv(stream):
+    return pd.read_csv(stream, usecols=important_cols)
+
 conversion_dict = {
     "My_File_Name": "Cool_File",
     "Sprint": "Iteration"
 }
+
+important_cols = ['ID', 'Work Item Type', 'Step Action']

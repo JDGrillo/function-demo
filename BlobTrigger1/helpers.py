@@ -32,5 +32,6 @@ def convert_filename(filename):
 
 
 conversion_dict = {
+    "My_File_Name": "Cool_File",
     "Sprint": "Iteration"
 }

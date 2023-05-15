@@ -4,11 +4,12 @@ This Azure Function is triggered by a new blob being added to a container in the
 Install Azure Functions Core Tools version 3.x, and Python 3.6 or later. See [Local development guide](https://docs.microsoft.com/azure/azure-functions/functions-develop-local) for details.
 
 ## Running the sample
+1. Create a Resource Group in the Azure portal.
 1. Create a new storage account in the Azure portal.
-1. Create a new intial container in the storage account.
-1. Create a new final container in the storage account.
+1. Create a new intial container in the storage account. This is where you will upload the intiial file.
+1. Create a new final container in the storage account. This is where the processed file will be saved.
 
-1. Create a new Function App in VS Code using the Azure Functions extension.
-1. Create a new Blob Trigger Function in VS Code using the Azure Functions extension.
+1. Create an App Service Plan to host your Function App.
+1. Create a new Function App in the Azure portal. Make sure to select the same Resource Group and App Service Plan you created in the previous steps.
 
-Follow the steps in getting_started.md to create a new Blob Trigger Function. When prompted for the path, enter the name of the initial container you created in step 2. When prompted for the language, select Python.
+1. Navigate to a VS Code window clone of this repo on your local machine.
